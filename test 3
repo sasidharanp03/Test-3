@@ -1,0 +1,58 @@
+                                 Boundary Value Analysis:
+
+Boundary value analysis is a software testing technique that focuses on testing the limits of input ranges, such as the minimum and maximum values
+
+Working:
+Identify boundaries: For a given input range (e.g., age from 20 to 80), the minimum is 22 and the maximum is 80.
+
+Test values: Create test cases using values around the boundaries:
+* Minimum boundary: Test the minimum value ,one value below  and one value above  (e.g., 19, 20, 21).
+* Maximum boundary: Test the maximum value , one value below  and one value above (e.g., 79, 80, 81).
+* Test valid and invalid inputs: 
+->valid boundary conditions (like 20 and 80) 
+->invalid boundary conditions (like 19 and 81) correctly.
+
+Example:
+For an application that requires a password between 30 and 65 characters:
+-> Valid values: Test with 30, 31, 64, and 65 characters.
+-> Invalid values: Test with 29 characters and 66 characters to ensure the system rejects them
+
+BVA scenario:
+-> Minimum value.
+-> Just above the minimum.
+-> Nominal Value.
+-> Just below Max value.
+-> Max value.
+
+   Boundary value Analysis 31 to 88
+
+Invalid (min-1)           Valid (min,min+1,Nominal value,max-1,max)      invalid (max+1) 
+
+     30                            31,32,60,87,88                                89
+
+
+
+                                     Equivalence Paritioning:
+
+->Identify the different sets of input.
+-> In equivalent data to assign the value are valid or invalid test case.
+
+Valid: 1-50
+
+Invalid: 0 or less
+
+Invalid: Greater than 50
+
+Test Case:
+
+A common example is testing a form that requires a user's age to be between 10 and 70.
+
+Valid partition: Ages 10-70. A test case could be a user aged 45.
+
+Invalid partition: Ages 0-9. A test case could be a user aged 7.
+
+Invalid partition: Ages 61 and above. A test case could be a user aged 70.
+
+
+
+              
