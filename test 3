@@ -54,5 +54,65 @@ Invalid partition: Ages 0-9. A test case could be a user aged 7.
 Invalid partition: Ages 61 and above. A test case could be a user aged 70.
 
 
+                     Software requirements
+                                        
+->A condition or capability needed by a user to solve a problem or achieve an objective 
+ three types in software requirements
+                  -> Functional requirements
+* to specify the actions that the software needs to perform.
+ex:
+User Authentication: system allow users to log in using a username and password.
+Search Functionality: users to search for products by name or category
+Report Generation: The system should be able to generate sales reports for a specified date range.
+                   -> Non-functional requirements
+*In Non functional requirements system’s behavior, quality, and constraints.
+ex:
+Performance:  system should process 1,000 transactions per second.
+Usability: software should be easy to use and have a user-friendly interface.
+Reliability:system must have 99.9% uptime.
+Security: Data must be encrypted during transmission and storage.
+                  -> Domain requirements
+* Domain requirements are specific to the domain or industry in which the software operates.
+Ex:
+Healthcare: software must in hospital for handling patient data.
+Finance:  system should be standards for financial reporting.
+E-commerce:software should support various payment gateways like gpay, netpayment, and credit card
 
-              
+
+                                        Use case testing 
+use case testing are  black-box testing technique that validates a system's functionality by creating test cases based on use cases 
+-> then we asssign value are correct if conditions is true if its assigned wrong value if condition are false
+
+Based on use cases: use case diagrams or documents
+->outline user goals 
+->system responses
+->derive test cases.
+
+End-to-end coverage: It tests the entire system transaction by transaction, from start to finish,  component testing.
+Verifies functional requirements: the system's functional requirements are software works correctly
+Includes positive and negative scenarios: Test cases are developed for both the primary success paths and alternative or error paths - invalid login credentials
+Supports various testing levels: it is used for system testing and user acceptance testing (UAT) user acceptance testing.
+
+
+                                         State transition testing 
+->state transition testing are  black-box software testing technique that focuses on their a system as it transitions between different states in response to specific events or input.
+Core Concepts:
+State: A distinct condition .
+For example, in a banking application, states could include "Logged Out," "Logged In," "Funds Available," or "Account Locked."
+Event: An input or action to a change from one state to another.
+Examples include "entering credentials," "making a deposit," or "exceeding login attempts."
+Transition: The movement of the system from one state to another
+Action: The system's response or output that occurs during or after a state transition
+success message, denying access, or performing a calculation.
+
+ login system in state transition system
+States:
+Unauthenticated,Authentication Processing, Authenticated, Account Locked. 
+Events:
+Enter Correct Credentials, Enter Incorrect Credentials, Exceed Login Attempts.
+Transitions:
+Unauthenticated + Enter the Correct Credentials -> Authentication Processing -> authenticated
+Unauthenticated" + enter the Incorrect Credentials ( two times) -> Account Locked
+
+
+
